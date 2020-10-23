@@ -1,0 +1,30 @@
+#post p{
+    font-size: 14px;
+}
+
+#category a {
+color: #333;
+margin-top: 12px;
+font-size: 13px;
+}
+
+#category a:hover {
+color: #0af;
+}
+
+#latest-posts {
+margin-top: 40px;
+}
+
+#latest-posts .row {
+margin-top: 20px;
+}
+
+#latest-posts img {
+height: 100%;
+width: 100%;
+}
+
+#latest-posts span {
+font-size: 12px;
+}

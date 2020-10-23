@@ -1,0 +1,648 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+a{
+    text-decoration: none !important;
+}
+li{
+    list-style: none;
+}
+section{
+    padding: 50px 0;
+}
+.btn{
+    border-radius: 0;
+}
+.top{
+    position: fixed;
+    bottom: 25px;
+    left: 40px;
+    padding: 2px 15px;
+    background: rgb(255, 187, 0);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    border-radius: 4px;
+    animation: fbottom 1s ease-in-out forwards;
+}
+
+.jumbotron{
+    background: url(../../images/kelly-sikkema-291518-unsplash.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 340px;
+    position: relative;
+    .page-title{
+        background: #fff;
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        left: 0;bottom: 0;
+        box-shadow: 0px 0px 3px rgba(9, 9, 9, 0.4);
+        h3{
+            line-height: 140px;
+        }
+    }
+}
+
+// ===== navbar on mobile ====
+nav{
+    background: rgb(255, 187, 0);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    visibility: hidden;
+    transition: .5s fbottom;
+    z-index: 2 !important;
+    a{
+        color: #333;
+    }
+    .navbar-brand{
+        margin-top: 60px;
+        h2{
+            font-size: 52px;
+            span{
+                color: rgb(226, 9, 9);
+            }
+        }
+    }
+    .navbar-nav{
+        .nav-link{
+            margin-left: -50px;
+            margin-top: 4%;
+            color: #333 !important;
+            font-size: 18px;
+        }
+    }
+    .btn-close{
+        position: absolute;
+        bottom: 60px;
+        left: 41%;
+        height: 80px;
+        width: 80px;
+        color: rgb(255, 187, 0);
+        background: rgb(226, 9, 9);
+        cursor: pointer;
+        border-radius: 50px;
+        h2{
+            line-height: 80px;
+            text-align: center;
+        }
+    }
+}
+
+.btn-show{
+    animation: fbottom 1s ease-in-out .6s forwards;
+    background: rgb(255, 187, 0);
+    color: #333;
+    position: fixed;
+    border-radius: 50px; 
+    bottom: 25px; right: 30px;
+    transform: rotate(180deg);
+    padding: 25px;
+    cursor: pointer;
+    z-index: 2 !important;
+    opacity: 0;
+    span:nth-child(3){
+        display: block;
+        width: 35px;
+        height: 3px;
+        background: #333;
+        margin: 6px 0;    
+    }
+    span:nth-child(2){
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: #333;
+        margin: 6px 0;    
+    }
+    
+    span:nth-child(1){
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #333;
+        margin: 6px 0;    
+    }
+    &:hover > span{
+        width: 35px;
+        transition: .2s ease-in;    
+    }
+}
+
+// ===== show navigation bar ====
+.showNav{
+    visibility: visible;
+    animation: fbottom .5s ease-in-out forwards;
+    -webkit-animation: fbottom .5s ease-in-out forwards;
+}
+// ==== end of navbar mobile =====
+
+
+// ==== section hero =====
+
+#hero{
+    width: 100%;
+    height: 300px;
+    background: url('../../images/kelly-sikkema-291518-unsplash.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;left:0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.651), #fff);
+    }
+
+    .slogan{
+        position: absolute;
+        margin-top: 15%;
+        z-index: 1;
+        width: 100%;
+        h2{
+            font-size: 48px;
+            color: #333;
+            text-shadow: 0 1px 1px #999;
+            span{
+                color: rgb(226, 9, 9);
+            }
+        }
+        h2,p{
+            animation: fleft 1s ease-in-out forwards;
+        }
+        p{
+            font-size: 14px;
+            color: #333;
+            margin-top: 20px;
+        }
+        .btn-started{
+            // float: right;
+            background: transparent;
+            padding: 13px 28px;
+            text-align: center;
+            color: #333 !important;
+            border: 1px solid #333;
+            animation: bling 1s ease-in-out forwards;
+            margin-top: 15px !important;
+            &:hover{
+                background: rgb(255, 187, 0);
+                transition: .5s ease-in-out;
+                transform: translate(1.09px);
+            }
+        }
+    }
+}
+
+// ==== end of section hero ====
+.btn-more{
+    padding: 10px 30px;
+    margin-top: 15px;
+    background: rgb(255, 187, 0);
+    color: #333333 !important;
+    border: none;
+    display: inline-block;
+    &:hover{
+        transition: .5s ease-in-out;
+        transform: translate(1.09px);
+    }
+}
+
+// === section facts ===
+
+#facts{
+    text-align: center;
+    background: #f7f7f7;
+    h3{
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    p{
+        font-size: 14px;
+        color: #666;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 48px;
+        color: rgb(255, 187, 0);
+    }
+}
+
+// #section facts
+
+//====== section services on mobile ====
+
+#services{
+    h3{
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    p{
+        font-size: 14px;
+        color: #666;
+    }
+    .col-md-4{
+        margin-top: 3%;
+    }
+    .card{
+        border-radius: 0;
+        background: #fafafa;
+        border: 1px solid #e6e6ee;
+        text-align: center;
+        h5{
+            font-weight: 500;
+            color: #000;
+        }
+        p{
+            color: #666;
+            font-family: sans-serif;
+        }
+        .icon{
+            background: rgb(255, 187, 0);
+            width: 65px;
+            height: 65px;
+            border-radius: 50px;
+            margin: auto;
+            margin-top: -30px;
+            h2{
+                line-height: 65px;
+                color: #fff;
+            }
+        }
+        &:hover > .icon{
+            background: #fff;
+            border: 2px solid rgb(255, 187, 0);
+            transform: scale(1.08);
+            transition: .09s ease-in-out;
+            h2{
+                color: rgb(255, 187, 0);
+            }
+        }
+    }
+}
+//====== end of section services on mobile ====
+
+
+// ====section portfolio=====
+
+#portfolio{
+    background: #f7f7f7;
+    h3{
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    p{
+        font-size: 14px;
+        color: #666;
+    }
+
+    .img-wrap{
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+        position: relative;
+        cursor: pointer;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .desc{
+            opacity: 0; 
+            width: 100%;
+            height: 100%;
+            position: relative;    
+            margin-top: -250px;
+            background: rgba(255, 255, 255, 0.651);
+            text-align: center;
+            .container{
+                padding-top: 105px;
+                span{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #333;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #666;
+                }
+            }
+        }
+        &:hover > .desc{
+            animation: bling .3s ease-in-out forwards;
+            // opacity: 1;
+        }
+    }
+
+}
+
+// #section portfolio
+.btn-read{
+    outline: 1px solid #fff;
+    color: #fff !important;
+    padding: 10px 50px;
+    margin-top: 20px;
+    display: inline-block;
+    &:hover{
+        transition: .5s ease-in-out;
+        transform: translate(1.09px);
+    }
+}
+// ==== section blog ====
+
+#blog{
+    .featured-post{
+        background: linear-gradient(to right bottom, #A16484, #A16484, rgb(109, 48, 80));
+        width: 100%;
+        height: 560px;
+        padding: 20px;
+        .container{
+            border: 1px solid #fff;
+            width: 100%;
+            height: 100%;
+            padding: 150px 50px;
+            span{
+                font-size: 18px;
+                color: #fff;
+            }
+            h2{
+                color: #fff;
+                margin-top: 15px;
+                font-weight: 600;
+            }
+            
+        }
+    }
+    ul{
+        margin-top: 70px;
+        span{
+            color: #666666;
+        }
+        li{
+            color: #333 !important;
+            .row{
+                height: 120px;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+            }
+            h5{
+                font-size: 16px;
+            }
+            p{
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+    
+}
+
+// #section blog
+
+//==== section contact ===
+
+#contact{
+    padding-bottom: 130px;
+    h3{
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    p{
+        font-size: 14px;
+        color: #666;
+    }
+    ul{
+        h4{
+            font-weight: 500;
+        }
+        li{
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    form{
+        .form-control{
+            border-radius: 0;
+            border: 2px solid #e6e6e6;
+            font-size: 13px;
+            &:focus{
+                box-shadow: none;
+                border-color: rgb(255, 187, 0);
+            }
+            &::placeholder{
+                font-size: 13px;
+                font-weight: 300;
+                font-family: sans-serif;
+            }
+        }
+    }
+}
+
+//=== #section contact ===
+
+// === footer ====
+
+footer{
+    background: #f1f1f1;
+    width: 100%;
+    padding: 40px 0 60px 0;
+    h5{
+        color: #333;
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        font-family: sans-serif;
+        color: #666;
+        a{
+            color: #666 !important;
+            &:hover{
+                text-decoration: underline !important;
+            }
+        }
+    }
+    small a{
+        color: rgb(255, 187, 0) !important;
+    }
+}
+
+// == #footer
+
+
+
+// END OF MOBILE
+
+// DESKTOP
+@media (min-width: 800px){
+    .btn-show{
+        display: none;
+    }
+    nav{
+    background: rgb(255, 187, 0);
+    width: 100%;
+    height: auto;
+    position: fixed;
+    visibility: visible;
+    z-index: 2 !important;
+    text-align: left;
+    padding: .3rem 1.5rem;
+    .container{
+        width: 100%;
+        margin-top: 0;
+        .navbar-brand{
+            margin-top: 0;
+            float: left;
+            h2{
+                font-size: 42px;
+                color: #fff;
+                span{
+                    color: rgb(226, 9, 9);
+                }
+            }
+        }
+        .navbar-nav{
+            float: right;
+            .nav-link{
+                margin-left: 15px;
+                display: inline-block;
+                font-size: 16px;
+                color: #fff !important;
+                font-weight: 400;
+            }
+        }
+        .btn-close{
+            display: none;
+        }
+    }
+    }
+// End of nav
+
+// hero
+#hero{
+    height: 430px;
+    .slogan{
+        margin-top: 13%;
+        padding-left: 8%;
+        z-index: 1;
+        width: 50%;
+        h2{
+            font-size: 3.5em;
+        }
+        
+        .btn-started{
+            opacity: 0;
+            animation: showBtn .6s ease-in-out forwards;
+            animation-delay: 1s;
+            padding: 13px 40px;
+            background: rgb(255, 187, 0);
+            border: none;
+            color: #fff !important;
+            border-radius: 50px;
+        }
+    }
+}
+#about{
+    opacity: 0;
+    animation: fbottom .5s ease-in-out 1s forwards;
+    margin-top: 3%;
+    p{
+        margin-top: 15px;
+    }
+    .btn-more{
+        background: transparent;
+        border: 1px solid #333;
+        color: #333 !important;
+    }
+}
+
+#services{
+    h3{
+        font-weight: bold;
+        font-family: sans-serif;
+        text-align: center;
+    }
+}
+
+#blog{
+    ul{
+        li{
+            h5{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+}
+
+
+// ====== Animation =====
+@keyframes fbottom{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate3d(0, 120px, 0);
+        transform: translate3d(0, 120px, 0);
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes fleft{
+    from{
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate3d(-400px, 0, 0);
+        transform: translate3d(-400px, 0, 0);
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes showBtn{
+    from{
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+@keyframes bling{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate3d(0, 40px, 0);
+        transform: translate3d(0, 40px, 0);
+    }    
+    100%{
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
